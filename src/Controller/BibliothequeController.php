@@ -15,7 +15,7 @@ class BibliothequeController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('/base.html.twig', [
+        return $this->render('bibliotheque/index.html.twig', [
             'controller_name' => 'BibliothequeController',
         ]);
     }

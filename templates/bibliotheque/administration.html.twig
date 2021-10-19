@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block title %} Menu Admin {% endblock %}
-
 {% block body %}
 
 <h2> Partie administration de la bibliotheque </h2>
@@ -17,4 +16,5 @@
         <button><a href="{{ path('administrateur_logout') }}">Logout</a></button>
     </h3>
 </ul>
+{% include "footer.html.twig" %}
 {% endblock %}
