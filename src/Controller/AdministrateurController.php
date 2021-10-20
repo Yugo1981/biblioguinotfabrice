@@ -83,4 +83,26 @@ class AdministrateurController extends AbstractController
             'controller_name' => 'AdministrateurController',
         ]);
     }
+
+    /**
+     * @Route("/alaune", name="administrateur_alaune")
+     */
+
+    public function aLaUne(): Response
+    {
+        return $this->render('administrateur/alaune.html.twig', [
+            'controller_name' => 'AdministrateurController',
+        ]);
+    }
+
+    /**
+     * @Route("/categorie", name="administrateur_categorie")
+     */
+
+    public function categorie(): Response
+    {
+        return $this->render('administrateur/categorie.html.twig', [
+            'controller_name' => 'AdministrateurController',
+        ]);
+    }
 }
