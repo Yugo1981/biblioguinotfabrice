@@ -2,20 +2,27 @@
 
 {% block title %} Menu Admin {% endblock %}
 {% block body %}
-
-<h2> Partie administration de la bibliotheque </h2>
+<style>
+    .button { background-color : cyan;margin: 0 auto}
+    .h2 { text-align : center; }
+    .diventete { background-color : grey;width:70%;margin: 0 auto
+    }
+</style>
+<div class="diventete">
+<h2 class="h2"> Partie administration de la bibliotheque </h2>
+</div>
 <hr>
 
 <ul> 
     <h3> 
-        <button><a href="{{ path('index_bibliotheque') }}">Accueil</a></button>
-        <button><a href="{{ path('administrateur_alaune') }}">A la une</a></button>
-        <button><a href="{{ path('administrateur_system') }}">Système</a></button>
-        <button><a href="{{ path('administrateur_utilisateurs') }}">Utilisateur</a></button>
-        <button><a href="{{ path('administrateur_contenu') }}">Contenu</a></button>
-        <button><a href="{{ path('administrateur_extenssion') }}">Extenssions</a></button>
-        <button><a href="{{ path('administrateur_categorie') }}">Categorie</a></button>
-        <button><a href="{{ path('administrateur_logout') }}">Logout</a></button>
+        <button class="button"><a href="{{ path('index_bibliotheque') }}">Accueil</a></button>
+        <button class="button"><a href="{{ path('administrateur_alaune') }}">A la une</a></button>
+        <button class="button"><a href="{{ path('administrateur_system') }}">Système</a></button>
+        <button class="button"><a href="{{ path('administrateur_utilisateurs') }}">Utilisateur</a></button>
+        <button class="button"><a href="{{ path('administrateur_contenu') }}">Contenu</a></button>
+        <button class="button"><a href="{{ path('administrateur_extenssion') }}">Extenssions</a></button>
+        <button class="button"><a href="{{ path('administrateur_categorie') }}">Categorie</a></button>
+        <button class="button"><a href="{{ path('administrateur_logout') }}">Logout</a></button>
     </h3>
 </ul>
 {% include "footer.html.twig" %}
